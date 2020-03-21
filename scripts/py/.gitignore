@@ -1,0 +1,8 @@
+!*.py
+!requirements.txt
+
+!utils/
+!utils/godot_dev/
+!utils/godot_dev/*/
+
+__pycache__/

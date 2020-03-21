@@ -1,0 +1,30 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Debug Windows x64 Godot",
+            "type": "shell",
+            "command" : "${workspaceFolder}\\.venv\\Scripts\\scons",
+            "args": [
+                "platform=windows",
+                "target=debug",
+                "bits=64"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}\\godot"
+            },
+            "problemMatcher": "$msCompile",
+            "group": "build"
+        },
+        {
+            "label": "Setup Windows Environment",
+            "type": "shell",
+            "command" : "${workspaceFolder}\\scripts\\bat\\setup_devenv.bat",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        }
+    ]
+}

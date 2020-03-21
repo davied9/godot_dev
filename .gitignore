@@ -1,0 +1,10 @@
+*
+
+!.git*
+/.git/
+
+!/.vscode/
+
+!/scripts/
+!/scripts/bat/
+!/scripts/py/
